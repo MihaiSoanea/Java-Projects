@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="it" lang="it"
+      xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+        <meta name="robots" content="noindex"/>
+        <title>Login</title>
+        <link rel="stylesheet" href="#{request.contextPath}/css/stile.css" type="text/css" />
+    </h:head>
+
+    <h:body>
+        <div class="content">
+            <f:metadata>
+                <f:event type="preRenderView" listener="#{controlloLogin.initBeans}"/>
+            </f:metadata>         
+            <div class="login">
+                <f:view transient="true">
+                    <h:form id="formLogin">
+                        <p:focus for="nomeUtente"/>
+                        <p:panel>
+                            <h:outputLabel value="Effettua il login" />
+                            <h:panelGrid columns="2" >
+                                <p:inputText id="nomeUtente" 
+                                             placeholder="Username"
+                                             binding="#{input1}"
+                                             value="#{vistaLogin.credenziali.nomeUtente}" required="true" label="nomeUtente">
+                                    <f:validateLength minimum="2" />
+                                </p:inputText>
+                                <p:message for="nomeUtente" showDetail="true" />
+
+                                <p:password id="pwd" placeholder="Password"                                          
+                                            binding="#{input2}"
+                                            value="#{vistaLogin.credenziali.password}" required="true" label="pwd"/>
+                                <p:message for="pwd" showDetail="true" />
+
+                                <p:commandButton value="Accedi" action="#{controlloLogin.verifica}" styleClass="btn btn-primary btn-block btn-large" ajax="false" />
+                            </h:panelGrid>
+                        </p:panel>
+                    </h:form>
+                    <h:form id="formLinkVeloci">
+                        <h:commandLink value="Entra come Admin" action="#{controlloLogin.loginAmministratore}" /> - 
+                    </h:form>
+                </f:view>
+            </div>
+        </div>
+        <div style="text-align: center; font-size: 75%">
+            <p>Unibas - CdL Ingegneria Informatica - Progetto sviluppato con JSF 2.2.14 + PrimeFaces 6.0 + Hibernate 4.3.11</p>
+        </div>
+    </h:body>
+</html>

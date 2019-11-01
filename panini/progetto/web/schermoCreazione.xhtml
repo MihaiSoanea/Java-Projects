@@ -1,0 +1,42 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                template="/templates/template.xhtml">
+
+    <ui:define name="title">Creazione</ui:define>
+
+    <ui:define name="body">
+        <div id="content">
+               <f:metadata>
+            </f:metadata>
+            <f:view>
+                <h:form>
+                    <p:outputLabel value="SELEZIONA IL TIPO DI PANE"/>
+                    <p:panelGrid columns="2">
+                        <p:selectOneRadio value="#{vistaCreazione.pane}">
+                            <f:selectItem itemValue="1" itemLabel="Focaccia"/>
+                            <f:selectItem itemValue="2" itemLabel="Francesina"/>
+                        </p:selectOneRadio>    
+                    </p:panelGrid>
+                    <p:outputLabel value="SELEZIONA IL TIPO DI PANE"/>
+                    <p:panelGrid columns="2">
+                        <p:selectOneRadio value="#{vistaCreazione.salume}">
+                            <f:selectItem itemValue="1" itemLabel="Bresaola"/>
+                            <f:selectItem itemValue="2" itemLabel="Crudo"/>
+                        </p:selectOneRadio>
+                    </p:panelGrid>
+                    <p:outputLabel value="SELEZIONA LE SALSE"/>
+                    <p:panelGrid columns="3">
+                        <p:selectBooleanCheckbox value="#{vistaCreazione.mayo}" itemLabel="Maionese"/>
+                        <p:selectBooleanCheckbox value="#{vistaCreazione.ketchup}" itemLabel="Ketchup"/>
+                        <p:selectBooleanCheckbox value="#{vistaCreazione.winchester}" itemLabel="Worchester"/>
+                    </p:panelGrid>
+                    <p:outputLabel value="SALVA IL PANINO"/>
+                    <p:commandButton value="Fine" action="#{controlloCreazione.crea}"/>
+                </h:form>
+            </f:view>
+        </div>
+    </ui:define>
+</ui:composition>

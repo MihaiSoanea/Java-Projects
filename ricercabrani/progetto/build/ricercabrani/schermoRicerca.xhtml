@@ -1,0 +1,38 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:h="http://java.sun.com/jsf/html"
+                template="/templates/template.xhtml">
+
+    <ui:define name="title">Ricerca</ui:define>
+
+    <ui:define name="body">
+        <div id="content">
+            <f:metadata>
+                
+            </f:metadata>
+            <f:view>
+                <h:form>
+                    <f:facet name="header">
+                        INSERISCI PAROLE DA RICERCARE SEPARATE DA UNO SPAZIO:
+                    </f:facet>  
+                    <p:panelGrid columns="2" >
+                        <p:inputText value="#{vistaRicerca.ricercaInserita}" />
+                        <p:commandButton value="Ricerca" action="#{controlloRicerca.ricerca}"/>
+                    </p:panelGrid>
+                    <p:panelGrid columns="1">
+                        <p:dataTable value="#{vistaRicerca.listaBrani}" var="brano" rendered="#{not empty vistaRicerca.listaBrani}">
+                            <p:column headerText="Titolo">
+                                <p:outputLabel value="#{brano.titolo}" />
+                            </p:column>
+                            <p:column headerText="Data">
+                                <p:outputLabel value="#{brano.dataFormattata}" style="#{vistaRicerca.stringaVerifica}"/>
+                            </p:column>
+                        </p:dataTable>
+                    </p:panelGrid>
+                </h:form>
+            </f:view>
+        </div>
+    </ui:define>
+</ui:composition>

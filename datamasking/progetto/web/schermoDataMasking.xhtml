@@ -1,0 +1,65 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:h="http://java.sun.com/jsf/html"
+                template="/templates/template.xhtml"
+                xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+
+    <ui:define name="title">DataMasking</ui:define>
+
+    <ui:define name="body">
+        <div id="content">
+            <f:metadata>
+                <f:event type="preRenderView" listener="#{controlloDataMasking.initBeans}"/>
+            </f:metadata>
+            <f:view>
+                <p:messages id="messages" showDetail="true" autoUpdate="true" closable="true"/>
+                <h:form>
+                    <p:panelGrid columns="2">
+                        <p:outputLabel value="Titolo verbale: "/>
+                        <p:outputLabel value="#{vistaDataMasking.titoloVerbale}"/>
+                    </p:panelGrid>
+                    <p:panelGrid columns="2">
+                        <p:outputLabel value="Testo verbale: "/>
+                        <h:inputTextarea value="#{vistaDataMasking.testoVerbale}" cols="10" rows="5"/>
+                    </p:panelGrid>
+                    <p:panelGrid columns="2">
+                        <p:outputLabel value="Data verbale: "/>
+                        <p:outputLabel value="#{vistaDataMasking.dataVerbale}"/>
+                    </p:panelGrid>
+                    <f:facet name="headerText">
+                        MODIFICA VERBALE:
+                    </f:facet>
+                    <p:panelGrid columns="2">
+                        <p:outputLabel value="INSERISCI IL NUOVO TITOLO "/>
+                        <p:inputText value="#{vistaDataMasking.titolo}" required="false"/>
+                    </p:panelGrid>
+                    <p:panelGrid columns="2">
+                        <p:outputLabel value="INSERISCI IL NUOVO TESTO"/>
+                        <p:inputText value="#{vistaDataMasking.testo}" required="false"/>
+                    </p:panelGrid>
+                    <p:panelGrid columns="2">
+                        <p:outputLabel value="INSERISCI LA NUOVA DATA"/>
+                       <p:calendar value="#{vistaDataMasking.data}"/>
+                    </p:panelGrid>
+                    <p:commandButton value="Modifica" action="#{controlloDataMasking.modifica}" />
+                    <f:facet name="headerText">
+                        SELEZIONA LA MODALITA DI OSCURAMENTO DEL VERBALE:
+                    </f:facet>
+                    <p:panelGrid columns="3">
+                        <p:selectOneRadio value="#{vistaDataMasking.criterio}">
+                            <f:selectItem itemValue="1" itemLabel="Dinamica"/>
+                            <f:selectItem itemValue="2" itemLabel="Persistente"/>
+                        </p:selectOneRadio>
+                    </p:panelGrid>
+                    <p:panelGrid columns="2">
+                    <p:commandButton value="Oscura" action="#{controlloDataMasking.oscura}"/>
+                    <p:outputLabel value="#{vistaDataMasking.risultato}"/>
+                    <p:commandButton value="Home" action="#{controlloDataMasking.home}"/>
+                    </p:panelGrid>
+                </h:form>
+            </f:view>
+        </div>
+    </ui:define>
+</ui:composition>

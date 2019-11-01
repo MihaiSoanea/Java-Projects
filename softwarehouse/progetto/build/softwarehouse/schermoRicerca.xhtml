@@ -1,0 +1,45 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                template="/templates/template.xhtml">
+
+    <ui:define name="title">Ricerca</ui:define>
+
+    <ui:define name="body">
+        <div id="content">
+            <f:metadata>
+               
+            </f:metadata>
+            <f:view>
+                <p:messages id="messages" showDetail="true" autoUpdate="true" closable="ture"/>
+                <p:growl id="message" showDetail="true"/>
+                <h:form>
+                    <f:facet name="header">
+                            SELEZIONA IL CRITERIO DI RICERCA PAGINE WEB:
+                    </f:facet>
+                    <p:panelGrid columns="2">
+                        <p:selectOneRadio value="#{vistaRicerca.criterio}" >
+                            <f:selectItem itemValue="1" itemLabel="Italiane"/>
+                            <f:selectItem itemValue="2" itemLabel="Estere"/>
+                        </p:selectOneRadio>  
+                    </p:panelGrid>
+                    <p:commandButton value="Ricerca" action="#{controlloRicerca.ricerca}" update="message" >
+                        <p:confirm header="Confirmation" message="Sei sicuro?" icon="pi pi-exclamation-triangle" />
+                    </p:commandButton>
+     
+                    <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+                        <p:commandButton value="Si" type="button" styleClass="ui-confirmdialog-yes" icon="pi pi-check" />
+                        <p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no" icon="pi pi-times" />
+                    </p:confirmDialog>          
+                    <p:dataTable value="#{vistaRicerca.listaPagine}" var="pagina" rendered="#{not empty vistaRicerca.listaPagine}">
+                        <p:column headerText="Nome">
+                            <p:outputLabel value="#{pagina.nome}"/>
+                        </p:column>
+                    </p:dataTable>
+                </h:form>
+            </f:view>
+        </div>
+    </ui:define>
+</ui:composition>

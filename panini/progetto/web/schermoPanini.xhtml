@@ -1,0 +1,39 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                template="/templates/template.xhtml">
+
+    <ui:define name="title">Lista</ui:define>
+
+    <ui:define name="body">
+         <f:metadata>
+             <f:event type="preRenderView" listener="#{controlloPanini.initBeans}"/>
+            </f:metadata>
+        <div id="content">
+            <f:view>
+                <h:form>
+                    <p:panelGrid columns="1">
+                        <p:dataTable value="#{vistaPanini.listaPanini}" var="panino" selection="#{vistaPanini.selezionato}" rowKey="#{panino.id}">
+                            <p:column selectionMode="single" width="30"/>
+                            <p:column headerText="Nome">
+                                <p:outputLabel value="#{panino.nome}"/>
+                            </p:column>
+                            <p:column headerText="Prezzo">
+                                <p:outputLabel value="#{panino.prezzo}"/>
+                            </p:column>
+                            <p:column headerText="Ingredienti">
+                                <p:outputLabel value="#{panino.ingredienti}"/>
+                            </p:column> 
+                        </p:dataTable>
+                    </p:panelGrid>
+                    <p:panelGrid columns="2">
+                        <p:commandButton value="Crea panino" action="/schermoCreazione"/>
+                        <p:commandButton value="Elimina panino" action="#{controlloPanini.elimina}"/>
+                    </p:panelGrid>
+                </h:form>
+            </f:view>
+        </div>
+    </ui:define>
+</ui:composition>

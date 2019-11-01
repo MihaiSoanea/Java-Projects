@@ -1,0 +1,41 @@
+<ui:composition
+      xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      template="/templates/template.xhtml">
+    <ui:define name="title">Iniziale</ui:define>
+    
+    <ui:define name="body">
+        <div class="content">
+            <f:metadata>
+                <f:event type="preRenderView" listener="#{controlloManager.init}"/>
+            </f:metadata>         
+                <f:view >
+                    <h:form >
+                        <p:panel>
+                            <h:outputLabel value="SELEZIONA UN CRITERIO DI SELEZIONE MANAGER" />
+                            <p:panelGrid columns="2" >
+                                
+                                <p:selectOneRadio value="#{vistaManager.criterio}">
+                                    <f:selectItem itemValue="1" itemLabel="Produttivita"/>
+                                    <f:selectItem itemValue="2" itemLabel="Assenze"/>
+                                    <f:selectItem itemValue="3" itemLabel="Combo"/>
+                                </p:selectOneRadio>
+                                
+                                <p:selectBooleanButton id="value1" value="#{vistaManager.top}" onLabel="WORST" offLabel="TOP" style="width:80px" />
+                                <h:outputLabel value="NUMERO MANAGER DA RICERCARE" />
+                                <p:inputText value="#{vistaManager.dimensione}">
+                                    <f:convertNumber type="number" integerOnly="true" maxIntegerDigits="3" minIntegerDigits="1"/>
+                                </p:inputText>
+                                           
+                                <p:commandButton value="Ricerca " action="#{controlloManager.ricerca}"/>
+                                <p:outputLabel value="#{vistaManager.risultato}" />
+                            </p:panelGrid>
+                        </p:panel>
+                    </h:form>
+                </f:view>
+        </div>
+    </ui:define>
+</ui:composition>

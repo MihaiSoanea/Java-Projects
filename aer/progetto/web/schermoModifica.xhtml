@@ -1,0 +1,52 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                template="/templates/template.xhtml">
+
+    <ui:define name="title">Scelta</ui:define>
+
+    <ui:define name="body">
+        <f:metadata>
+            <f:event type="preRenderView" listener="#{controlloModifica.initBeans}"/>
+        </f:metadata>         
+        <div id="content">
+            <f:view>
+                <h:form>
+                    <p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" />  
+                    <p:panel>
+                         
+                            <p:outputLabel value="Cambia Stato volo in Cancellato inserendo una motivazione:"/>
+                           
+                            <p:panelGrid columns="2">
+                               <p:inputText value='#{vistaModifica.descrizione}'/>
+    
+                                <p:commandButton value="Conferma" action="#{controlloModifica.cancellato}" />
+          
+                            </p:panelGrid>
+                             
+                              <p:outputLabel value="Cambia Stato volo in Partito inserendo l'orario effettivo:"/>
+                            
+                            <p:panelGrid columns="2">
+                                <p:outputLabel value="Ora"/>
+                                <p:inputText value="#{vistaModifica.ora}">
+                                    <f:validateLength minimum="1"/>
+                                    <f:convertNumber type="number" maxIntegerDigits="23" minIntegerDigits="0"/>
+                                </p:inputText>
+                                <p:outputLabel value="Minuti:"/>
+                                <p:inputText value="#{vistaModifica.minuti}">
+                                    <f:validateLength minimum="1"/>
+                                    <f:convertNumber type="number" maxIntegerDigits="59" minIntegerDigits="0"/>
+                                </p:inputText>
+                            
+                                <p:commandButton value="Conferma" action="#{controlloModifica.partito}" />
+                            
+                            </p:panelGrid>
+                    </p:panel>
+                </h:form>
+            </f:view>
+        </div>
+    </ui:define>
+</ui:composition>
+

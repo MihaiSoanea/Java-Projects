@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Mihai" name="it.unibas.datamasking.modello.TestProva" skipped="0" tests="1" time="0.219" timestamp="2019-04-19T10:11:24">
+  <properties>
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="ant.file.framework-jsf2-template-build" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\framework-jsf2-template-build.xml" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_181\jre" />
+    <property name="test.src.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\test" />
+    <property name="webapp.name" value="datamasking" />
+    <property name="test.data.dir.present" value="true" />
+    <property name="sun.java2d.dpiaware" value="true" />
+    <property name="build.webapp.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build\datamasking" />
+    <property name="conf.dir.present" value="true" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\endorsed" />
+    <property name="jdk.gtk.version" value="2.2" />
+    <property name="src.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\src" />
+    <property name="sun.java2d.noddraw" value="true" />
+    <property name="netbeans.hash.code" value="unique=0df912e65-7576-4419-9f8b-f0f08a7beff0_89462864-62d6-4f1a-9486-3f2f54cb7e79" />
+    <property name="build.sysclasspath" value="ignore" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.version" value="1.8.0_181" />
+    <property name="nb.show.statistics.ui" value="usageStatisticsEnabled" />
+    <property name="conf.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\src\conf" />
+    <property name="org.openide.major.version" value="IDE/1" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="netbeans.autoupdate.variant" value="" />
+    <property name="javadoc.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\dist\javadoc" />
+    <property name="primefaces.ver" value="6.0" />
+    <property name="netbeans.buildnumber" value="incubator-netbeans-release-404-on-20190319" />
+    <property name="ant.project.invoked-targets" value="test-modello" />
+    <property name="nbproject.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\nbproject" />
+    <property name="ant.file.web-jsfri2-template-build" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\web-jsf2-hibernate4-template-build.xml" />
+    <property name="user.name" value="Mihai Soanea" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="jdk.home" value="C:\Program Files\Java\jdk1.8.0_181" />
+    <property name="lib.dir" value="c:/lib" />
+    <property name="sun.awt.keepWorkingSetOnMinimize" value="true" />
+    <property name="netbeans.autoupdate.version" value="1.23" />
+    <property name="jboss.i18n.generate-proxies" value="true" />
+    <property name="netbeans.dirs" value="C:\netbeans\nb;C:\netbeans\ergonomics;C:\netbeans\ide;C:\netbeans\extide;C:\netbeans\java;C:\netbeans\apisupport;C:\netbeans\webcommon;C:\netbeans\websvccommon;C:\netbeans\enterprise;C:\netbeans\mobility;C:\netbeans\profiler;C:\netbeans\python;C:\netbeans\php;C:\netbeans\identity;C:\netbeans\harness;C:\netbeans\cnd;C:\netbeans\cndext;C:\netbeans\dlight;C:\netbeans\groovy;C:\netbeans\extra;C:\netbeans\javacard;C:\netbeans\javafx" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="sun.awt.datatransfer.timeout" value="1000" />
+    <property name="user.timezone" value="" />
+    <property name="nb.native.filechooser" value="false" />
+    <property name="netbeans.extbrowser.manual_chrome_plugin_install" value="yes" />
+    <property name="org.openide.specification.version" value="6.2" />
+    <property name="user.script" value="" />
+    <property name="path.separator" value=";" />
+    <property name="catalina.dir" value="c:/applications/apache-tomcat-7.0.57" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="driver.name" value="postgresql-8.4-701.jdbc3.jar" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner it.unibas.datamasking.modello.TestProva skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build\test\report\TEST-it.unibas.datamasking.modello.TestProva.xml crashfile=C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\junitvmwatcher4531273722218251698.properties propsfile=C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\junit1366731462603628007.properties" />
+    <property name="https.nonProxyHosts" value="localhost|127.0.0.1|Mihai" />
+    <property name="plugin.manager.check.updates" value="false" />
+    <property name="ant.junit.enabletestlistenerevents" value="true" />
+    <property name="ant.file" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build.xml" />
+    <property name="catalina.password" value="admin" />
+    <property name="db.username" value="pguser" />
+    <property name="ant.file.web-template-build" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\web-template-build.xml" />
+    <property name="netbeans.autoupdate.language" value="it" />
+    <property name="java.io.tmpdir" value="C:\Users\MIHAIS~1\AppData\Local\Temp\" />
+    <property name="user.language" value="it" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="apple.laf.useScreenMenuBar" value="true" />
+    <property name="jspc.src.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build\jspc\src" />
+    <property name="nu.validator.checker.imageCandidateString.hasWidth" value="0" />
+    <property name="test.report.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build\test\report" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="misc.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\varie" />
+    <property name="ant.file.tomcat-template-build" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\tomcat-template-build.xml" />
+    <property name="netbeans.dynamic.classpath" value="C:\netbeans\platform\core\asm-all-5.0.1.jar;C:\netbeans\platform\core\core-base.jar;C:\netbeans\platform\core\core.jar;C:\netbeans\platform\core\org-netbeans-libs-asm.jar;C:\netbeans\platform\core\org-openide-filesystems-compat8.jar;C:\netbeans\platform\core\org-openide-filesystems.jar;C:\netbeans\nb\core\org-netbeans-upgrader.jar;C:\netbeans\nb\core\locale\core_nb.jar" />
+    <property name="http.nonProxyHosts" value="localhost|127.0.0.1|Mihai" />
+    <property name="ant.file.type.web-template-build" value="file" />
+    <property name="netbeans.autoupdate.country" value="IT" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="test.data.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\test\dati" />
+    <property name="jspc.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build\jspc" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.4 compiled on June 19 2018" />
+    <property name="netbeans.home" value="C:\netbeans\platform" />
+    <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade" />
+    <property name="test.build.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build\test\classes" />
+    <property name="ant.file.dbms-template-build" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\dbms-template-build.xml" />
+    <property name="build.webapp.classes.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build\datamasking\WEB-INF\classes" />
+    <property name="apple.awt.graphics.UseQuartz" value="true" />
+    <property name="os.name" value="Windows 8.1" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="org.openide.version" value="deprecated" />
+    <property name="servlet.api.jar" value="c:/applications/apache-tomcat-7.0.57/lib/servlet-api.jar" />
+    <property name="build.webapp.metainf.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build\datamasking\META-INF" />
+    <property name="sun.awt.enableExtraMouseButtons" value="true" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Intel\TXE Components\TCS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass;C:\Program Files\Intel\TXE Components\DAL\;C:\Program Files\Intel\TXE Components\IPT\;." />
+    <property name="ant.file.type.framework-hibernate-template-build" value="file" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="basedir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto" />
+    <property name="build.debug" value="on" />
+    <property name="jna.boot.library.name" value="jnidispatch-440" />
+    <property name="java.class.version" value="52.0" />
+    <property name="pool.name" value="c3p0-0.9.2.1.jar" />
+    <property name="ant.home" value="C:\netbeans\extide\ant" />
+    <property name="ant.file.datamasking" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build.xml" />
+    <property name="build.debuglevel" value="lines,vars,source" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin" />
+    <property name="build.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build\datamasking\WEB-INF\classes" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="netbeans.logger.console" value="true" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="user.variant" value="" />
+    <property name="catalina.username" value="admin" />
+    <property name="hibernate-tools.ver" value="4.3.11" />
+    <property name="build.root.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build" />
+    <property name="netbeans.productversion" value="Apache NetBeans IDE 11.0 (Build incubator-netbeans-release-404-on-20190319)" />
+    <property name="webinf.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\web\WEB-INF" />
+    <property name="build.compiler.emacs" value="true" />
+    <property name="ant.project.name" value="datamasking" />
+    <property name="build.webapp.lib.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build\datamasking\WEB-INF\lib" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="ant.file.type.datamasking" value="file" />
+    <property name="resources.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\varie\risorse" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="browser.exe" value="open" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="ant.file.framework-hibernate-template-build" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\framework-hibernate4-template-build.xml" />
+    <property name="os.version" value="6.3" />
+    <property name="netbeans.default_userdir_root" value="C:\Users\Mihai Soanea\AppData\Roaming\NetBeans" />
+    <property name="jna.loaded" value="true" />
+    <property name="user.home" value="C:\Users\Mihai Soanea" />
+    <property name="org.xml.sax.driver" value="com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="catalina.port" value="8080" />
+    <property name="ant.file.type.framework-jsf2-template-build" value="file" />
+    <property name="user.dir" value="C:\netbeans\bin" />
+    <property name="test.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build\test" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="hibernate.ver" value="4.3.11" />
+    <property name="ant.file.type.tomcat-template-build" value="file" />
+    <property name="java.vm.version" value="25.181-b13" />
+    <property name="java.class.path" value="c:\lib\jsf-2.2.14\javax.faces-api-2.2.jar;c:\lib\jsf-2.2.14\jsf-impl-2.2.14.jar;c:\lib\primefaces-6.0\flick-1.0.1.jar;c:\lib\primefaces-6.0\primefaces-6.0.jar;c:\lib\hibernate-4.3.11\antlr-2.7.7.jar;c:\lib\hibernate-4.3.11\dom4j-1.6.1.jar;c:\lib\hibernate-4.3.11\hibernate-c3p0-4.3.11.Final.jar;c:\lib\hibernate-4.3.11\hibernate-commons-annotations-4.0.5.Final.jar;c:\lib\hibernate-4.3.11\hibernate-core-4.3.11.Final.jar;c:\lib\hibernate-4.3.11\hibernate-ehcache-4.3.11.Final.jar;c:\lib\hibernate-4.3.11\hibernate-jpa-2.1-api-1.0.0.Final.jar;c:\lib\hibernate-4.3.11\javassist-3.18.1-GA.jar;c:\lib\hibernate-4.3.11\jboss-logging-3.1.3.GA.jar;c:\lib\hibernate-4.3.11\jboss-logging-annotations-1.2.0.Beta1.jar;c:\lib\hibernate-4.3.11\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;c:\lib\hibernate-4.3.11\slf4j-api-1.6.1.jar;c:\applications\apache-tomcat-7.0.57\lib\servlet-api.jar;c:\lib\postgresql-8.4-701.jdbc3.jar;c:\lib\commons-logging-1.1.jar;C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build\datamasking\WEB-INF\classes;C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build\test\classes;c:\lib\Tidy.jar;c:\lib\hamcrest-core-1.3.jar;c:\lib\httpunit.jar;c:\lib\junit-4.12.jar;c:\lib\junitperf.jar;C:\netbeans\extide\ant\lib\ant-launcher.jar;C:\netbeans\extide\ant\lib\ant.jar;C:\netbeans\extide\ant\lib\ant-junit.jar;C:\netbeans\extide\ant\lib\ant-junit4.jar" />
+    <property name="os.arch" value="x86" />
+    <property name="dist.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\dist" />
+    <property name="netbeans.user" value="C:\Users\Mihai Soanea\AppData\Roaming\NetBeans\11.0" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="ant.file.type.web-jsfri2-template-build" value="file" />
+    <property name="ant.core.lib" value="C:\netbeans\extide\ant\lib\ant.jar" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="jsf.ver" value="2.2.14" />
+    <property name="ant.file.type.dbms-template-build" value="file" />
+    <property name="jspc.build.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build\jspc\build" />
+    <property name="file.separator" value="\" />
+    <property name="webapp.path" value="/datamasking" />
+    <property name="java.runtime.version" value="1.8.0_181-b13" />
+    <property name="build.optimize" value="off" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_181\jre\classes" />
+    <property name="db.password" value="pguser" />
+    <property name="java.util.logging.config.class" value="org.netbeans.core.startup.TopLogging" />
+    <property name="user.country" value="IT" />
+    <property name="catalina.host" value="localhost" />
+    <property name="org.netbeans.io.suspend" value="0" />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="web.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\web" />
+    <property name="build.webapp.meta.dir" value="C:\Users\Mihai Soanea\Desktop\Esercizi fatti bene\datamasking\progetto\build\datamasking\WEB-INF" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="sun.arch.data.model" value="32" />
+  </properties>
+  <testcase classname="it.unibas.datamasking.modello.TestProva" name="testMasking" time="0.046" />
+  <system-out><![CDATA[Credendo che fosse il 13/01/2017, giorno del suo compleanno, la mattina del 12/01/2017 il signor Monteverde (cod. fisc. GVNMPP98L01G942X) invio una email a pizza.perte@latuapizza.it ordinando ben 50 pizze da far consegnare alla sua casa vacanza di Metaponto, in Via Cagliari 88 e pagando con un bonifico immediato a IT77J5578744203052570125659 (IBAN della Pizzeria). Quando si rese conto che era il 12/01/2017 si affretto a disdire l ordine ma dalla pizzeria gli dissero che le pizze erano gia state consegnate. Ma come? Lui non era ancora arrivato a Metaponto. Chi c'era a Piazzale Cagliari, 88 ?
+Credendo che fosse il XX/XX/2017, giorno del suo compleanno, la mattina del XX/XX/2017 il signor Monteverde (cod. fisc. ****************) invio una email a xxxxx.xxxxx@@latuapizza.it ordinando ben 50 pizze da far consegnare alla sua casa vacanza di Metaponto, in Via Xxxxxx 88 e pagando con un bonifico immediato a IBAN-IBAN-IBAN-IBAN-IBAN (IBAN della Pizzeria). Quando si rese conto che era il XX/XX/2017 si affretto a disdire l ordine ma dalla pizzeria gli dissero che le pizze erano gia state consegnate. Ma come? Lui non era ancora arrivato a Metaponto. Chi c'era a Piazzale Xxxxxx 88 ?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,42 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                template="/templates/template.xhtml">
+
+    <ui:define name="title">Principale</ui:define>
+
+    <ui:define name="body">
+        <div id="content">
+            <f:metadata>
+                <f:event type="preRenderView" listener="#{controlloPrincipale.initBeans}"/>
+            </f:metadata>
+            <f:view>
+                <p:messages id="messagges" showDetail="true" closable="true" autoUpdate="true"/>
+                <h:form>
+                    <p:panel>
+                        <f:facet name="header">
+                            ELENCO CANALI:
+                        </f:facet>
+                        <p:panelGrid columns="1">
+                            <p:dataTable var="canale" value="#{vistaPrincipale.canali}" selection="#{vistaPrincipale.canale}" rowKey="#{canale.nome}">
+                                <p:column headerText="Nome">
+                                    <p:outputLabel value="#{canale.nome}"/>
+                                </p:column>
+                                <p:column headerText="Data">
+                                    <p:outputLabel value="#{canale.dataFormattata}"/>
+                                </p:column>
+                                <p:column style="text-align: center">
+                                    <p:commandButton value="JOIN" action="#{controlloPrincipale.mostra}">
+                                        <f:setPropertyActionListener value="#{canale}" target="#{vistaPrincipale.canale}"/>
+                                    </p:commandButton>
+                                </p:column>
+                            </p:dataTable>
+                        </p:panelGrid>
+                    </p:panel>
+                </h:form>
+            </f:view>
+        </div>
+    </ui:define>
+</ui:composition>

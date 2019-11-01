@@ -1,0 +1,54 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                template="/templates/template.xhtml">
+
+    <ui:define name="title">PaginaIniziale</ui:define>
+
+    <ui:define name="body">
+        <div id="content">
+            <f:metadata> 
+            </f:metadata>
+            <f:view>
+                <h:form>
+                    <f:facet name="header">
+                            CREA NUOVA SCATOLA:
+                    </f:facet>
+                        <p:outputLabel value="MATERIALE"/>
+                    <p:panelGrid columns="2">
+                        <p:selectOneRadio value="#{vistaNuova.criterioMateriale}">
+                            <f:selectItem itemValue="1" itemLabel="Cartone"/>
+                            <f:selectItem itemValue="2" itemLabel="Plastica"/>
+                        </p:selectOneRadio>
+                    </p:panelGrid>   
+                        <p:outputLabel value="FINITURE"/>
+                    <p:panelGrid columns="3">
+                        <p:selectOneRadio value="#{vistaNuova.criterioFiniture}">
+                            <f:selectItem itemValue="1" itemLabel="Quadrettatura"/>
+                            <f:selectItem itemValue="2" itemLabel="Foratura"/>
+                            <f:selectItem itemValue="3" itemLabel="Martellatura"/>
+                        </p:selectOneRadio>
+                    </p:panelGrid>  
+                        <p:outputLabel value="FINITURE FILO DI SCATOLA"/>
+                    <p:panelGrid columns="4">
+                        <p:selectBooleanCheckbox value="#{vistaNuova.glisettatura}" itemLabel="Glisettatura" onchange="submit()"/>
+                        <p:selectBooleanCheckbox value="#{vistaNuova.striatura}" itemLabel="Striatura" onchange="submit()"/>
+                        <p:selectBooleanCheckbox value="#{vistaNuova.punteggiatura}" itemLabel="Punteggiatura" onchange="submit()"/>
+                        <p:selectBooleanCheckbox value="#{vistaNuova.firmata}" itemLabel="Firmata a mano" onchange="submit()"/>
+                    </p:panelGrid>  
+                         <p:outputLabel value="COLORE"/>
+                    <p:panelGrid columns="3">
+                        <p:selectOneRadio value="#{vistaNuova.criterioColore}">
+                            <f:selectItem itemValue="1" itemLabel="Oro"/>
+                            <f:selectItem itemValue="2" itemLabel="Bronzo"/>
+                            <f:selectItem itemValue="3" itemLabel="Argento"/>
+                        </p:selectOneRadio>
+                    </p:panelGrid>  
+                         <p:commandButton value="SALVA" action="#{controlloNuova.salva}"/>
+                </h:form>
+            </f:view>
+        </div>
+    </ui:define>
+</ui:composition>

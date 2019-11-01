@@ -1,0 +1,46 @@
+<ui:composition
+      xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      template="/templates/template.xhtml">
+    <ui:define name="title">Iniziale</ui:define>
+    
+    <ui:define name="body">
+        <div class="content">
+            <f:metadata>
+                <f:event type="preRenderView" listener="#{controlloNoManager.init}"/>
+            </f:metadata>         
+                <f:view >
+                    <h:form >
+                        <p:panel>
+                            <h:outputLabel value="SCEGLI CRITERIO DI ASSEGNAZIONE PREMI" />
+                            <p:panelGrid columns="1" >
+                               <p:selectOneRadio value="#{vistaNoManager.criterio}">
+                                    <f:selectItem itemValue="1" itemLabel="Produttivita premi"/>
+                                    <f:selectItem itemValue="2" itemLabel="Presenze premi"/>
+                                    <f:selectItem itemValue="3" itemLabel="Anzianita premi"/>
+                                    <f:selectItem itemValue="4" itemLabel="Benessere premi"/>
+                                </p:selectOneRadio>
+                                <h:outputLabel value="INSERISCI ETA'" />
+                                <p:inputText value="#{vistaNoManager.valore1}">
+                                    <f:convertNumber type="number" integerOnly="true" maxIntegerDigits="65" minIntegerDigits="18"/>
+                                </p:inputText>
+                                <h:outputLabel value="INSERISCI PRODUTTIVITA'" />
+                                <p:inputText value="#{vistaNoManager.valore2}">
+                                    <f:convertNumber type="number" integerOnly="true" maxIntegerDigits="10" minIntegerDigits="1"/>
+                                </p:inputText>
+                                <h:outputLabel value="INSERISCI TASSO ASSENZE" />
+                                <p:inputText value="#{vistaNoManager.valore3}">
+                                    <f:convertNumber type="number" integerOnly="true" maxIntegerDigits="100" minIntegerDigits="1"/>
+                                </p:inputText>
+                                <p:commandButton value="Ricerca" action="#{controlloNoManager.ricerca}"/>  
+                                <p:outputLabel value="#{vistaNoManager.risultato}"/>
+                            </p:panelGrid>
+                        </p:panel>
+                    </h:form>
+                </f:view>
+        </div>
+    </ui:define>
+</ui:composition>

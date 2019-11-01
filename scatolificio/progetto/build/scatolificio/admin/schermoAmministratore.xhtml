@@ -1,0 +1,31 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                template="/templates/template.xhtml">
+
+    <ui:define name="title">Amministratore</ui:define>
+
+    <ui:define name="body">
+        <f:metadata>
+        </f:metadata>         
+        <div id="content">
+            <f:view>
+                <p:breadCrumb>
+                    <p:menuitem value="home" outcome="/admin/schermoAmministratore" rendered="#{modello.utente.ruoloAdmin}"/>  
+                </p:breadCrumb>
+
+                <p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" />  
+
+                <p:panel id="pannello">
+                    <p:panelGrid id="griglia" columns="6">
+                        <h:outputText value="Schermo Amministratore....." />
+                        <h:outputText value="Schermo Amministratore....." />
+                        <h:outputText value="Schermo Amministratore....." />
+                    </p:panelGrid>
+                </p:panel>
+            </f:view>
+        </div>
+    </ui:define>
+</ui:composition>

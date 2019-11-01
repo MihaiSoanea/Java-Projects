@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <display-name>progetto JSF 2</display-name>
+    <description>progetto PrimeFaces</description>
+    <!-- *******************************************************
+              PARAMETRI DI CONFIGURAZIONE
+    ******************************************************* -->
+    <context-param>
+        <param-name>javax.faces.PROJECT_STAGE</param-name>
+        <!--        <param-value>Development</param-value>-->
+        <param-value>Production</param-value>
+    </context-param>
+    <context-param>
+        <param-name>com.sun.faces.enableMissingResourceLibraryDetection</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>javax.faces.PARTIAL_STATE_SAVING_METHOD</param-name>
+        <param-value>false</param-value>
+    </context-param>
+    <context-param>
+        <param-name>javax.faces.DATETIMECONVERTER_DEFAULT_TIMEZONE_IS_SYSTEM_TIMEZONE</param-name>
+        <param-value>true</param-value>
+    </context-param>
+    <context-param>
+        <param-name>primefaces.THEME</param-name>
+        <param-value>flick</param-value>
+    </context-param>
+    <!-- *******************************************************
+                      FILTRI
+    ******************************************************* -->
+    <filter>
+        <filter-name>filtroHibernate</filter-name>
+        <filter-class>it.unibas.aer.controllo.filtri.FiltroHibernate</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>filtroHibernate</filter-name>
+        <url-pattern>*.faces</url-pattern>
+    </filter-mapping>
+    <filter>
+        <filter-name>filtroSessione</filter-name>
+        <filter-class>it.unibas.aer.controllo.filtri.FiltroSessione</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>filtroSessione</filter-name>
+        <url-pattern>*.faces</url-pattern>
+    </filter-mapping>
+<!--    <filter>
+        <filter-name>filtroCharsetEncoding</filter-name>
+        <filter-class>it.unibas.progetto.controllo.filtri.FiltroCharsetEncoding</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>filtroCharsetEncoding</filter-name>
+        <url-pattern>*</url-pattern>
+    </filter-mapping>-->
+    <!-- *******************************************************
+                        SERVLET
+    ******************************************************* -->
+    <servlet>
+        <servlet-name>Faces Servlet</servlet-name>
+        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.faces</url-pattern>
+    </servlet-mapping>
+    <!--
+    <servlet-mapping>
+        <servlet-name>Faces Servlet</servlet-name>
+        <url-pattern>*.xhtml</url-pattern>
+    </servlet-mapping>
+    
+    -->
+    <!-- *******************************************************
+                        ALTRO
+    ******************************************************* -->
+    <welcome-file-list>
+        <welcome-file>schermoLogin.faces</welcome-file>
+    </welcome-file-list>
+    <!--
+    <error-page>
+       <error-code>404</error-code>
+       <location>/errore.jsp</location>
+    </error-page>
+    
+    <error-page>
+        <exception-type>javax.faces.application.ViewExpiredException</exception-type>
+        <location>/errori/sessioneScaduta.jsf</location>
+    </error-page>
+
+    <error-page>
+        <exception-type>it.unibas.valutazione.eccezioni.InitBeans</exception-type>
+        <location>/errori/datiNonAggiornati.jsf</location>
+    </error-page>
+    
+    <error-page>
+       <exception-type>javax.servlet.jsp.JspException</exception-type>
+       <location>/errore.jsp</location>
+    </error-page>
+    -->
+    <security-constraint>
+        <display-name>Impedisce l'accesso diretto alle pagine JSF</display-name>
+        <web-resource-collection>
+            <web-resource-name>Pagine JSF</web-resource-name>
+            <url-pattern>*.xhtml</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <description>Nessun ruolo</description>
+        </auth-constraint>
+    </security-constraint>
+</web-app>

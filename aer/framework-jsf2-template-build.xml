@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="framework-jsf2-template-build">
+     
+    <echo message="Versione di JSF: ${jsf.ver}" />
+    
+    <fileset id="jsf.jars" dir="${lib.dir}/jsf-${jsf.ver}">
+        <include name="javax.faces-*.jar" />        
+        <include name="jsf-impl-${jsf.ver}.jar" />
+    </fileset>
+ 
+    <echo message="Versione di primefaces: ${primefaces.ver}" />
+
+    <fileset id="primefaces.jars" dir="${lib.dir}/primefaces-${primefaces.ver}">
+        <include name="primefaces-${primefaces.ver}.jar" />
+        <include name="flick-1.0.1.jar" />
+    </fileset>
+
+</project>

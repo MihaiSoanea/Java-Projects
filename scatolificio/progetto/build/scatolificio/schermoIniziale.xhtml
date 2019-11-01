@@ -1,0 +1,38 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                template="/templates/template.xhtml">
+
+    <ui:define name="title">PaginaIniziale</ui:define>
+
+    <ui:define name="body">
+        <div id="content">
+            <f:metadata>
+                <f:event type="preRenderView" listener="#{controlloIniziale.initBeans}"/>
+            </f:metadata>
+            <f:view>
+                <h:form>
+                    <f:facet name="header">
+                            MODELLI DI SCATOLA:
+                    </f:facet>
+                    <p:panelGrid columns="1">
+                        <p:dataTable value="#{vistaIniziale.listaScatole}" rendered ="#{not empty vistaIniziale.listaScatole}" var="scatola">
+                            <p:column headerText="Nome">
+                                <p:outputLabel value="#{scatola.nome}"/>
+                            </p:column>
+                            <p:column headerText="Prezzo">
+                                <p:outputLabel value="#{scatola.costo}"/>
+                            </p:column>
+                            <p:column headerText="Descrizione">
+                                <p:outputLabel value="#{scatola.descrizione}"/>
+                            </p:column>
+                        </p:dataTable>
+                        <p:commandButton value="Aggiungi" action="#{controlloIniziale.aggiungi}"/>
+                    </p:panelGrid>    
+                </h:form>
+            </f:view>
+        </div>
+    </ui:define>
+</ui:composition>

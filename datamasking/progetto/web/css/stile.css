@@ -1,0 +1,234 @@
+body {
+    line-height: 1 !important;
+    margin: 0;
+}
+ol, ul {
+    list-style: none !important;
+}
+blockquote, q {
+    quotes: none !important;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '' !important;
+    content: none !important;
+}
+table {
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+}
+/* End of Eric Meyer's CSS Reset */
+
+
+
+
+html {
+    height: 100% !important;
+}
+
+body {
+    font: 12px/18px Arial, sans-serif !important;
+    height: 100% !important;
+
+}
+
+.middle {
+    width: 100% !important;
+    padding: 0 0 100px !important;
+    position: relative !important;
+}
+.middle:after {
+    display: table !important;
+    clear: both !important;
+    content: '' !important;
+}
+.container {
+    width: 100% !important;
+    float: left !important;
+}
+.content {
+    clear: both;
+    padding: 10 10 10 270px !important;
+
+}
+
+
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+    float: left !important;
+    margin-left: -100% !important;
+    position: relative !important;
+    background: #282828 !important;
+}
+
+.right { 
+    color: white;
+    float: right !important; 
+}
+
+.right a{
+    text-decoration: none;
+}
+
+aside a.ui-menuitem-link {
+    font-size: 17px !important;
+    padding:10px 10px !important;
+    color:#999 !important;
+
+}
+
+aside a.ui-menuitem-link:active, a.ui-menuitem-link:hover{
+    color: white !important;
+}
+
+aside div {
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+
+}
+
+.ui-menuitem {
+
+}
+
+aside .ui-separator{
+    border-color: #343434 !important;
+}
+
+.ui-breadcrumb {
+    margin-bottom: 30px;
+}
+
+.ui-breadcrumb a, .ui-breadcrumb a:hover, .ui-breadcrumb a:visited {
+    font-size: 14px !important;
+    text-decoration: none !important;
+    color: black !important;
+}
+
+p.errore{
+    background-color: #f2dede !important;
+    color: #b94a48 !important;
+}
+
+.rosso {
+    background-image: none !important;
+    background-color: #FF3333 !important;
+    color: #FFFFFF !important;
+}
+
+.bianco {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    color: #000000 !important;
+}
+
+.verde {
+    background-color: #33FF00 !important;
+    background-image: none !important;
+    color: #000000 !important;
+}
+
+.giallo {
+    background-color: #FFFF33!important;
+    background-image: none !important;
+    color: #000000 !important;
+}
+
+.grigio {
+    background-color: #CCCCCC !important;
+    background-image: none !important;
+    color: #000000 !important;
+}
+
+.ritardo{
+    text-align: center;
+    font-size: 150%;
+    color: #FF0000 !important;
+    background-color: #FFFFFF !important;
+}
+
+td.cornice {
+    border-width: thick;
+    border-color: black;
+}
+
+.dimLink{
+    font-size: 11px !important;
+    font-family: Arial,Verdana,sans-serif !important;
+}
+
+element.style {
+}
+.ui-multiselectlistbox .ui-multiselectlistbox-listcontainer {
+    float: left;
+    margin-right: 4px;
+}
+.ui-widget-header .ui-inputfield, .ui-widget-content .ui-inputfield {
+    font-weight: normal;
+}
+.ui-inputfield, .ui-widget-content .ui-inputfield, .ui-widget-header .ui-inputfield {
+    background: #ffffff;
+    -moz-box-shadow: inset 0 2px 2px #dddddd;
+    -webkit-box-shadow: inset 0 2px 2px #dddddd;
+    box-shadow: inset 0 2px 2px #dddddd;
+    color: #444444;
+}
+
+.ui-selectonelistbox, .ui-selectmanymenu, .ui-multiselectlistbox-listcontainer {
+    width: 190px !important;   
+}
+.logo{
+    background-color: #0866C6 !important;
+    float: left;
+}
+
+.barramenu {
+    float: left;
+    margin-top: 1em;
+}
+
+.testata {
+    height: 70px !important;
+    line-height: 70px !important;
+
+    background-color: #0866C6 !important;
+    background-color: #0866C6 !important;
+    clear: both;
+}
+
+.testata div{
+    margin-right:50px !important;
+    vertical-align:middle !important;
+    font-size: 16px !important;
+}
+
+.ui-widget-content, .ui-panelgrid td, .ui-panel .ui-panel-content {
+    border-color: white !important;
+    border-style: none !important;
+}
+
+.struttura{
+    width: 300px !important;
+}
+
+.generale{
+    padding: 0px 10px !important;
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+    opacity: .9;
+    filter: Alpha(Opacity=90);
+    background-image: none;
+}
+
+.ui-picklist .ui-picklist-list {
+    height: 300px !important;
+    width: 400px !important;
+}
+
+.ui-datatable-header, .ui-datatable-footer {
+    text-align: left !important;
+}

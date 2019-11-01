@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Mihai%20Soanea/Desktop/Esercizi%20fatti%20bene/struttureschelettriche/progetto/src/it/unibas/strutturescheletriche/modello/visitor/VisitorIndividuo.java</file>
+            <file>file:/C:/Users/Mihai%20Soanea/Desktop/Esercizi%20fatti%20bene/struttureschelettriche/progetto/test/it/unibas/strutturescheletriche/modello/TestProva.java</file>
+            <file>file:/C:/Users/Mihai%20Soanea/Desktop/Esercizi%20fatti%20bene/struttureschelettriche/progetto/src/it/unibas/strutturescheletriche/modello/visitor/IVisitor.java</file>
+            <file>file:/C:/Users/Mihai%20Soanea/Desktop/Esercizi%20fatti%20bene/struttureschelettriche/progetto/src/it/unibas/strutturescheletriche/modello/AbstractOssoComposite.java</file>
+            <file>file:/C:/Users/Mihai%20Soanea/Desktop/Esercizi%20fatti%20bene/struttureschelettriche/progetto/src/it/unibas/strutturescheletriche/modello/visitor/VisitorSpecie.java</file>
+            <file>file:/C:/Users/Mihai%20Soanea/Desktop/Esercizi%20fatti%20bene/struttureschelettriche/progetto/src/it/unibas/strutturescheletriche/modello/OssoIntermedioComposite.java</file>
+            <file>file:/C:/Users/Mihai%20Soanea/Desktop/Esercizi%20fatti%20bene/struttureschelettriche/progetto/src/it/unibas/strutturescheletriche/modello/strategy/IStrategy.java</file>
+            <file>file:/C:/Users/Mihai%20Soanea/Desktop/Esercizi%20fatti%20bene/struttureschelettriche/progetto/src/it/unibas/strutturescheletriche/modello/strategy/StrategySpecie.java</file>
+            <file>file:/C:/Users/Mihai%20Soanea/Desktop/Esercizi%20fatti%20bene/struttureschelettriche/progetto/src/it/unibas/strutturescheletriche/modello/OssoFogliaComposite.java</file>
+            <file>file:/C:/Users/Mihai%20Soanea/Desktop/Esercizi%20fatti%20bene/struttureschelettriche/progetto/src/it/unibas/strutturescheletriche/modello/strategy/StrategyIndividuo.java</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xml:lang="it" lang="it"
+      xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        
+        <meta name="robots" content="noindex"/>
+        <title><ui:insert name="title"></ui:insert></title>
+        <link rel="stylesheet" href="#{request.contextPath}/css/stile.css" type="text/css" />
+    </h:head>
+
+    <h:body>
+
+        <div class="generale">
+            <div class="barramenu">
+                <h:form>
+                    <p:menubar>
+                        <p:submenu label="File" icon="ui-icon-wrench" 
+                                   rendered="#{not modello.utente.ruoloOperatore}" >
+                            <p:menuitem value="Azione1" outcome="/admin/schermoAmministratore"/>
+                            <p:menuitem value="Azione2" outcome="/admin/schermoAmministratore"/>
+                            <p:menuitem value="Azione3" outcome="/admin/schermoAmministratore"/>
+
+                        </p:submenu>
+                        <p:menuitem value="Esci" action="#{controlloLogin.esci}" icon="ui-icon-close" />
+                    </p:menubar>
+                </h:form>
+            </div>
+        </div>
+        <div class="content">
+            <ui:insert name="body"></ui:insert>            
+        </div>
+        <div style="text-align: center; font-size: 75%">
+            <p>Unibas - CdL Ingegneria Informatica - Progetto sviluppato con JSF 2.2.14 + PrimeFaces 6.0 + Hibernate 4.3.11</p>
+        </div>
+    </h:body>
+</html>

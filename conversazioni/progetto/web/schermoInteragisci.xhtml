@@ -1,0 +1,33 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                template="/templates/template.xhtml">
+
+    <ui:define name="title">Principale</ui:define>
+
+    <ui:define name="body">
+        <div id="content">
+            <f:view>
+                <p:messages id="messages" autoUpdate="true" closable="true" showDetail="true"/>
+                <h:form>
+                    <p:panelGrid columns="2">
+                        <p:outputLabel value="Nome canale"/>
+                        <p:outputLabel value="#{vistaInteragisci.nomeCanale}"/>
+                        <p:outputLabel value="Data"/>
+                        <p:outputLabel value="#{vistaInteragisci.dataCreazione}"/>
+                        <f:facet name="header">
+                            INSERISCI UN MESSAGGIO
+                        </f:facet>
+                        <p:outputLabel value="#{vistaInteragisci.messaggio}"/>
+                        <p:commandButton value=">" action="#{controlloInteragisci.invia}"/>
+                        <p:commandButton value="Utenti online" action="#{controlloInteragisci.utentiAttivi}"/>
+                        <p:outputLabel value="#{vistaInteragisci.totaleIscritti}"/>
+                        <p:commandButton value="Exit" action="#{controlloInteragisci.esci}"/>
+                    </p:panelGrid>
+                </h:form>   
+            </f:view>
+        </div>
+    </ui:define>
+</ui:composition>

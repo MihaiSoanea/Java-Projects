@@ -1,0 +1,44 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                template="/templates/template.xhtml">
+
+    <ui:define name="title">Scelta</ui:define>
+
+    <ui:define name="body">
+        <f:metadata>
+            <f:event type="preRenderView" listener="#{controlloScelta.initBeans}"/>
+        </f:metadata>         
+        <div id="content">
+            <f:view>
+                <h:form>
+                    <p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" />  
+                        <f:facet name="header" >
+                                Inserisci l'orario di base
+                            </f:facet>
+                            <h:panelGrid columns="3" >
+                                <p:inputText   placeHolder="Ora" value="#{vistaScelta.ora}" required="true" label="ora">
+                                             <f:validateLength minimum="1"/>
+                                             <f:convertNumber integerOnly="true" type="number" minIntegerDigits="0" maxIntegerDigits="23"/>
+                                </p:inputText>
+                                <p:inputText  placeHolder="Minuti" value="#{vistaScelta.minuti}" required="true" label="minuti">
+                                    <f:validateLength minimum="1"/>
+                                    <f:convertNumber integerOnly="true" type="number" maxIntegerDigits="59" minIntegerDigits="0"/>
+                                </p:inputText>
+                                
+                                <p:commandButton value="Conferma" action="#{controlloScelta.conferma}" styleClass="btn btn-primary btn-block btn-large" ajax="false" />
+                            </h:panelGrid>
+                        <p:panelGrid id="griglia" columns="2">
+                            <p:selectOneRadio value="#{vistaScelta.criterio}">
+                                <f:selectItem itemValue="1" itemLabel="Pannello Amministratore"/>
+                                <f:selectItem itemValue="2" itemLabel="Pannello Passeggeri"/>
+                            </p:selectOneRadio>
+                        </p:panelGrid>
+                </h:form>
+            </f:view>
+        </div>
+    </ui:define>
+</ui:composition>
+

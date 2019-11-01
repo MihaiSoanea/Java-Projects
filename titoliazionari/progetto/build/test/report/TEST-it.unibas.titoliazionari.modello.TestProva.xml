@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Mihai" name="it.unibas.titoliazionari.modello.TestProva" skipped="0" tests="1" time="0.547" timestamp="2019-01-23T15:53:29">
+  <properties>
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="ant.file.framework-jsf2-template-build" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\framework-jsf2-template-build.xml" />
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_181\jre" />
+    <property name="test.src.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\test" />
+    <property name="webapp.name" value="titoliazionari" />
+    <property name="test.data.dir.present" value="true" />
+    <property name="sun.java2d.dpiaware" value="true" />
+    <property name="build.webapp.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build\titoliazionari" />
+    <property name="conf.dir.present" value="true" />
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\endorsed" />
+    <property name="src.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\src" />
+    <property name="sun.java2d.noddraw" value="true" />
+    <property name="netbeans.hash.code" value="unique=NB_EXTIDE_JAVA_WEBCOMMON_WEBEE0c6673980-cf25-4398-839b-1c42cb9f22f5_89462864-62d6-4f1a-9486-3f2f54cb7e79" />
+    <property name="build.sysclasspath" value="ignore" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.version" value="1.8.0_181" />
+    <property name="nb.show.statistics.ui" value="usageStatisticsEnabled" />
+    <property name="conf.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\src\conf" />
+    <property name="org.openide.major.version" value="IDE/1" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="ant.file.type.titoliazionari" value="file" />
+    <property name="netbeans.autoupdate.variant" value="" />
+    <property name="javadoc.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\dist\javadoc" />
+    <property name="primefaces.ver" value="6.0" />
+    <property name="netbeans.buildnumber" value="201609300101" />
+    <property name="ant.project.invoked-targets" value="test-modello" />
+    <property name="nbproject.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\nbproject" />
+    <property name="ant.file.web-jsfri2-template-build" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\web-jsf2-hibernate4-template-build.xml" />
+    <property name="user.name" value="Mihai Soanea" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="jdk.home" value="C:\Program Files\Java\jdk1.8.0_181" />
+    <property name="lib.dir" value="c:/lib" />
+    <property name="sun.awt.keepWorkingSetOnMinimize" value="true" />
+    <property name="netbeans.autoupdate.version" value="1.23" />
+    <property name="netbeans.dirs" value="C:\Program Files\NetBeans 8.2\nb;C:\Program Files\NetBeans 8.2\ergonomics;C:\Program Files\NetBeans 8.2\ide;C:\Program Files\NetBeans 8.2\extide;C:\Program Files\NetBeans 8.2\java;C:\Program Files\NetBeans 8.2\apisupport;C:\Program Files\NetBeans 8.2\webcommon;C:\Program Files\NetBeans 8.2\websvccommon;C:\Program Files\NetBeans 8.2\enterprise;C:\Program Files\NetBeans 8.2\mobility;C:\Program Files\NetBeans 8.2\profiler;C:\Program Files\NetBeans 8.2\python;C:\Program Files\NetBeans 8.2\php;C:\Program Files\NetBeans 8.2\identity;C:\Program Files\NetBeans 8.2\harness;C:\Program Files\NetBeans 8.2\cnd;C:\Program Files\NetBeans 8.2\cndext;C:\Program Files\NetBeans 8.2\dlight;C:\Program Files\NetBeans 8.2\groovy;C:\Program Files\NetBeans 8.2\extra;C:\Program Files\NetBeans 8.2\javacard;C:\Program Files\NetBeans 8.2\javafx" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="sun.awt.datatransfer.timeout" value="1000" />
+    <property name="user.timezone" value="" />
+    <property name="nb.native.filechooser" value="false" />
+    <property name="org.openide.specification.version" value="6.2" />
+    <property name="user.script" value="" />
+    <property name="path.separator" value=";" />
+    <property name="catalina.dir" value="c:/applications/apache-tomcat-7.0.57" />
+    <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="driver.name" value="postgresql-8.4-701.jdbc3.jar" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner it.unibas.titoliazionari.modello.TestProva skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build\test\report\TEST-it.unibas.titoliazionari.modello.TestProva.xml crashfile=C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\junitvmwatcher6918336292082004568.properties propsfile=C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\junit7664385749884347339.properties" />
+    <property name="https.nonProxyHosts" value="localhost|127.0.0.1|Mihai" />
+    <property name="ant.junit.enabletestlistenerevents" value="true" />
+    <property name="ant.file" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build.xml" />
+    <property name="catalina.password" value="admin" />
+    <property name="db.username" value="pguser" />
+    <property name="ant.file.titoliazionari" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build.xml" />
+    <property name="ant.file.web-template-build" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\web-template-build.xml" />
+    <property name="netbeans.autoupdate.language" value="it" />
+    <property name="java.io.tmpdir" value="C:\Users\MIHAIS~1\AppData\Local\Temp\" />
+    <property name="user.language" value="it" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="apple.laf.useScreenMenuBar" value="true" />
+    <property name="jspc.src.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build\jspc\src" />
+    <property name="test.report.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build\test\report" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="sun.desktop" value="windows" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="misc.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\varie" />
+    <property name="ant.file.tomcat-template-build" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\tomcat-template-build.xml" />
+    <property name="netbeans.dynamic.classpath" value="C:\Program Files\NetBeans 8.2\platform\core\asm-all-5.0.1.jar;C:\Program Files\NetBeans 8.2\platform\core\core-base.jar;C:\Program Files\NetBeans 8.2\platform\core\core.jar;C:\Program Files\NetBeans 8.2\platform\core\org-netbeans-libs-asm.jar;C:\Program Files\NetBeans 8.2\platform\core\org-openide-filesystems-compat8.jar;C:\Program Files\NetBeans 8.2\platform\core\org-openide-filesystems.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core-base_ja.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core-base_pt_BR.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core-base_ru.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core-base_zh_CN.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core_ja.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core_pt_BR.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core_ru.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\core_zh_CN.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-netbeans-libs-asm_ja.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-netbeans-libs-asm_pt_BR.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-netbeans-libs-asm_ru.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-netbeans-libs-asm_zh_CN.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems-compat8_ja.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems-compat8_pt_BR.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems-compat8_ru.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems-compat8_zh_CN.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems_ja.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems_pt_BR.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems_ru.jar;C:\Program Files\NetBeans 8.2\platform\core\locale\org-openide-filesystems_zh_CN.jar;C:\Program Files\NetBeans 8.2\nb\core\org-netbeans-upgrader.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\core_nb.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\core_nb_ja.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\core_nb_pt_BR.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\core_nb_ru.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\core_nb_zh_CN.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\org-netbeans-upgrader_ja.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\org-netbeans-upgrader_pt_BR.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\org-netbeans-upgrader_ru.jar;C:\Program Files\NetBeans 8.2\nb\core\locale\org-netbeans-upgrader_zh_CN.jar" />
+    <property name="http.nonProxyHosts" value="localhost|127.0.0.1|Mihai" />
+    <property name="ant.file.type.web-template-build" value="file" />
+    <property name="netbeans.autoupdate.country" value="IT" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="test.data.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\test\dati" />
+    <property name="jspc.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build\jspc" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.7 compiled on April 9 2016" />
+    <property name="netbeans.home" value="C:\Program Files\NetBeans 8.2\platform" />
+    <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade" />
+    <property name="test.build.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build\test\classes" />
+    <property name="ant.file.dbms-template-build" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\dbms-template-build.xml" />
+    <property name="build.webapp.classes.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build\titoliazionari\WEB-INF\classes" />
+    <property name="apple.awt.graphics.UseQuartz" value="true" />
+    <property name="os.name" value="Windows 8.1" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="org.openide.version" value="deprecated" />
+    <property name="servlet.api.jar" value="c:/applications/apache-tomcat-7.0.57/lib/servlet-api.jar" />
+    <property name="build.webapp.metainf.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build\titoliazionari\META-INF" />
+    <property name="sun.awt.enableExtraMouseButtons" value="true" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Intel\TXE Components\TCS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Hewlett-Packard\SimplePass;C:\Program Files\Intel\TXE Components\DAL\;C:\Program Files\Intel\TXE Components\IPT\;." />
+    <property name="ant.file.type.framework-hibernate-template-build" value="file" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="basedir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto" />
+    <property name="build.debug" value="on" />
+    <property name="jna.boot.library.name" value="jnidispatch-422" />
+    <property name="java.class.version" value="52.0" />
+    <property name="pool.name" value="c3p0-0.9.2.1.jar" />
+    <property name="ant.home" value="C:\Program Files\NetBeans 8.2\extide\ant" />
+    <property name="build.debuglevel" value="lines,vars,source" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin" />
+    <property name="build.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build\titoliazionari\WEB-INF\classes" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="user.variant" value="" />
+    <property name="catalina.username" value="admin" />
+    <property name="hibernate-tools.ver" value="4.3.11" />
+    <property name="build.root.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build" />
+    <property name="netbeans.productversion" value="NetBeans IDE 8.2 (Build 201609300101)" />
+    <property name="webinf.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\web\WEB-INF" />
+    <property name="build.compiler.emacs" value="true" />
+    <property name="ant.project.name" value="titoliazionari" />
+    <property name="build.webapp.lib.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build\titoliazionari\WEB-INF\lib" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="resources.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\varie\risorse" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="browser.exe" value="open" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
+    <property name="ant.file.framework-hibernate-template-build" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\framework-hibernate4-template-build.xml" />
+    <property name="os.version" value="6.3" />
+    <property name="netbeans.default_userdir_root" value="C:\Users\Mihai Soanea\AppData\Roaming\NetBeans" />
+    <property name="jna.loaded" value="true" />
+    <property name="user.home" value="C:\Users\Mihai Soanea" />
+    <property name="org.xml.sax.driver" value="com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="catalina.port" value="8080" />
+    <property name="ant.file.type.framework-jsf2-template-build" value="file" />
+    <property name="user.dir" value="C:\Program Files\NetBeans 8.2" />
+    <property name="test.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build\test" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="hibernate.ver" value="4.3.11" />
+    <property name="ant.file.type.tomcat-template-build" value="file" />
+    <property name="java.vm.version" value="25.181-b13" />
+    <property name="java.class.path" value="c:\lib\jsf-2.2.14\javax.faces-api-2.2.jar;c:\lib\jsf-2.2.14\jsf-impl-2.2.14.jar;c:\lib\primefaces-6.0\flick-1.0.1.jar;c:\lib\primefaces-6.0\primefaces-6.0.jar;c:\lib\hibernate-4.3.11\antlr-2.7.7.jar;c:\lib\hibernate-4.3.11\dom4j-1.6.1.jar;c:\lib\hibernate-4.3.11\hibernate-c3p0-4.3.11.Final.jar;c:\lib\hibernate-4.3.11\hibernate-commons-annotations-4.0.5.Final.jar;c:\lib\hibernate-4.3.11\hibernate-core-4.3.11.Final.jar;c:\lib\hibernate-4.3.11\hibernate-ehcache-4.3.11.Final.jar;c:\lib\hibernate-4.3.11\hibernate-jpa-2.1-api-1.0.0.Final.jar;c:\lib\hibernate-4.3.11\javassist-3.18.1-GA.jar;c:\lib\hibernate-4.3.11\jboss-logging-3.1.3.GA.jar;c:\lib\hibernate-4.3.11\jboss-logging-annotations-1.2.0.Beta1.jar;c:\lib\hibernate-4.3.11\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;c:\lib\hibernate-4.3.11\slf4j-api-1.6.1.jar;c:\applications\apache-tomcat-7.0.57\lib\servlet-api.jar;c:\lib\postgresql-8.4-701.jdbc3.jar;c:\lib\commons-logging-1.1.jar;C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build\titoliazionari\WEB-INF\classes;C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build\test\classes;c:\lib\Tidy.jar;c:\lib\hamcrest-core-1.3.jar;c:\lib\httpunit.jar;c:\lib\junit-4.12.jar;c:\lib\junitperf.jar;C:\Program Files\NetBeans 8.2\extide\ant\lib\ant-launcher.jar;C:\Program Files\NetBeans 8.2\extide\ant\lib\ant.jar;C:\Program Files\NetBeans 8.2\extide\ant\lib\ant-junit.jar;C:\Program Files\NetBeans 8.2\extide\ant\lib\ant-junit4.jar" />
+    <property name="os.arch" value="x86" />
+    <property name="dist.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\dist" />
+    <property name="netbeans.user" value="C:\Users\Mihai Soanea\AppData\Roaming\NetBeans\8.2" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="ant.file.type.web-jsfri2-template-build" value="file" />
+    <property name="ant.core.lib" value="C:\Program Files\NetBeans 8.2\extide\ant\lib\ant.jar" />
+    <property name="jsf.ver" value="2.2.14" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.file.type.dbms-template-build" value="file" />
+    <property name="file.separator" value="\" />
+    <property name="jspc.build.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build\jspc\build" />
+    <property name="webapp.path" value="/titoliazionari" />
+    <property name="java.runtime.version" value="1.8.0_181-b13" />
+    <property name="build.optimize" value="off" />
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_181\jre\classes" />
+    <property name="db.password" value="pguser" />
+    <property name="jdk.launcher.addexports.5" value="java.management/sun.management=ALL-UNNAMED" />
+    <property name="jdk.launcher.addexports.4" value="java.desktop/com.sun.java.swing.plaf.windows=ALL-UNNAMED" />
+    <property name="jdk.launcher.addexports.3" value="java.desktop/sun.awt.im=ALL-UNNAMED" />
+    <property name="java.util.logging.config.class" value="org.netbeans.core.startup.TopLogging" />
+    <property name="jdk.launcher.addexports.2" value="java.desktop/java.awt.peer=ALL-UNNAMED" />
+    <property name="jdk.launcher.addexports.1" value="java.base/jdk.internal.jrtfs=ALL-UNNAMED" />
+    <property name="user.country" value="IT" />
+    <property name="jdk.launcher.addexports.0" value="java.desktop/sun.awt=ALL-UNNAMED" />
+    <property name="catalina.host" value="localhost" />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="build.webapp.meta.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\build\titoliazionari\WEB-INF" />
+    <property name="web.dir" value="C:\Users\Mihai Soanea\Desktop\titoliazionari\progetto\web" />
+    <property name="org.openide.awt.ActionReference.completion" value="org.netbeans.modules.apisupport.project.layers.PathCompletions" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="sun.arch.data.model" value="32" />
+  </properties>
+  <testcase classname="it.unibas.titoliazionari.modello.TestProva" name="hello" time="0.14" />
+  <system-out><![CDATA[[Titolo{nome=FCA Supersocieta=FCA S.p.A., tipologia=Azionario, area=Europa, settore=Servizi}, Titolo{nome=FCA Bond+societa=FCA S.p.A., tipologia=Obbligazionale, area=Europa, settore=Industria}]
+297.92719919110203
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
